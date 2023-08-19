@@ -1,0 +1,577 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: #594545;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+#navbar-icon{
+    width: 30px;
+    height: 30px;
+    margin: 10px 0px;
+    display: none;
+}
+
+#navbar-group{
+    display: flex;
+    list-style-type: none;
+}
+
+#navbar-title{
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-navbar{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.btn-navbar a:hover {
+    background-color: #FFF8EA;
+    color: black;
+}
+
+.jumbotron{
+    color: black;
+    background-color: #fff8ea;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.jumbotron .jumbotron-text{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+}
+
+.jumbotron .jumbotron-text p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.jumbotron .jumbotron-text .btn-sign-in{
+    width: 150px;
+    height: 30px;
+    text-decoration: none;
+    color: #102C57;
+    background-color: #F9F5F6;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.jumbotron .jumbotron-text .btn-sign-in:hover{
+    box-shadow: 0px 0px 5px 1px #815B5B;
+}
+
+main{
+    background-color: #fff8ea99;
+}
+
+article{
+    padding: 20px;
+}
+
+#history{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 20px; */
+}
+
+#history h2{
+    margin: 10px 0px;
+}
+
+#history div{
+    display: flex;
+    text-align: justify;
+    gap: 15px;
+}
+
+#history figure figcaption{
+    text-align: center;
+}
+
+.typical{
+    text-align: center;
+}
+
+.typical section{
+    display: flex;
+    gap: 30px;
+    padding: 10px 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.menu ul p{
+    width: 300px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.menu figure img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.additonal-informations{
+    display: flex;
+    gap: 15px;
+    justify-content:space-around;
+}
+
+.contact-us{
+    width: 430px;
+    text-align: center;
+}
+
+.contact-us label{
+    display: block;
+}
+
+.contact-us input{
+    width: 100%;
+}
+
+.contact-us textarea{
+    width: 100%;
+}
+
+.contact-us div{
+    text-align: start;
+}
+
+form button{
+    width: 150px;
+    background-color: #FFF8EA;
+    color: black;
+}
+
+aside li{
+    width: 300px;
+}
+
+aside h3{
+    text-align: center;
+}
+
+aside ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    padding: 20px 0px;
+}
+
+aside img{
+    display: block;
+    margin: 0px auto;
+}
+
+aside p{
+    width: 100%;
+    text-align: justify;
+}
+
+footer {
+    background-color: #594545;
+    height: 70px;
+}
+
+footer p {
+    height: 70px;
+    width: 1000px;
+    text-align: center;
+    color: white;
+    size: 15px;
+    font-weight: 400;
+    line-height: 70px;
+}
+
+#contact {
+    position: absolute;
+    right: 300px;
+    width: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+#contact li a ion-icon{
+    margin: 20px;
+    display: block;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+}
+
+#contact li a ion-icon:hover {
+    color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 1200px){
+    .jumbotron img{
+        width: 200px;
+    }
+
+    .jumbotron .jumbotron-text{
+        width: 500px;
+        font-size: 14px;
+    }
+
+    #history img{
+        width: 300px;
+    }
+
+    .typical img{
+        width: 150px;
+    }
+
+    .menu figure img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .menu ul p{
+        width: 300px;
+    }
+
+    .contact-us{
+        width: 220px;
+    }
+
+    form button{
+        width: 100px;
+    }
+
+    .contact-us input{
+        width: 220px;
+    }
+    
+    .contact-us textarea{
+        width: 220px;
+    }
+    
+    aside img{
+        width: 150px;
+    }
+
+    aside li{
+        width: 220px
+    }
+
+    footer {
+        width: 100%;
+        position: relative;
+        height: 70px;
+        padding: 10px 0px;
+    }
+
+    footer p {
+        background-color: #594545;
+        color: #ffffff;
+        line-height: 1;
+        width: 100%;
+        height: 25px;
+        font-size: 12px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        margin: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 890px){
+    .jumbotron img{
+        width: 150px;
+    }
+
+    .jumbotron .jumbotron-text{
+        width: 300px;
+        font-size: 12px;
+    }
+
+    #history img{
+        width: 200px;   
+    }
+    
+    #history div{
+        align-items: center;
+    }
+
+    #navbar-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav h3{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .additonal-informations{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .typical img{
+        width: 100px;
+    }
+
+    .menu ul p{
+        width: 200px;
+    }
+
+    .menu figure img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-us{
+        width: 400px;
+    }
+
+    form button{
+        width: 150px;
+    }
+
+    .contact-us input{
+        width: 400px;
+    }
+    
+    .contact-us textarea{
+        width: 400px;
+    }
+    
+    aside img{
+        width: 150px;
+    }
+
+    aside li{
+        width: 230px
+    }
+
+    footer{
+        padding: 0px 0px;
+    }
+
+    #contact {
+        margin-left: 35%;
+        width: auto;
+        position: static;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+    #navbar-group{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    #navbar-icon{
+        display: block;
+    }
+
+    .navbar-group--close{
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .jumbotron{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .jumbotron img{
+        width: 200px;
+        margin: 20px 0px;
+    }
+    
+    .jumbotron .jumbotron-text{
+        width: 270px;
+        font-size: 12px;
+        align-items: center;
+    }
+        
+    .jumbotron .jumbotron-text h1{
+        text-align: center;
+    }
+
+    #history img{
+        width: 250px; 
+        padding: 10px 0px;  
+    }
+    
+    #history div{
+        flex-direction: column;
+    }
+
+    .typical section{
+        flex-direction: column;
+    }
+
+    .typical img{
+        width: 150px;
+    }
+
+    .menu ul{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .menu figure img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .menu ul p{
+        width: 100%;
+        text-align: center;
+    }
+
+    aside li{
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    aside ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-us{
+        width: 250px;
+    }
+
+    form button{
+        width: 100px;
+    }
+
+    #navbar-group li{
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-us input{
+        width: 250px;
+    }
+    
+    .contact-us textarea{
+        width: 250px;
+    }
+    
+    #contact {
+        justify-content: center;
+        margin-left: 0%;
+    }
+
+    #contact li a ion-icon{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .jumbotron img{
+        width: 150px;
+    }
+    
+    .jumbotron .jumbotron-text{
+        width: 200px;
+        font-size: 12px;
+        align-items: center;
+    }
+        
+    .jumbotron .jumbotron-text h1{
+        text-align: center;
+    }
+
+    .typical img{
+        width: 100px;
+    }
+
+    .menu figure img{
+        width: 100px;
+        height: 100px;
+    }  
+
+    .menu ul p{
+        text-align: center;
+    }
+
+    #history img{
+        width: 150px; 
+    }
+
+    .contact-us{
+        width: 150px;
+    }
+
+    form button{
+        width: 60px;
+    }
+
+    .contact-us input{
+        width: 150px;
+    }
+    
+    .contact-us textarea{
+        width: 150px;
+    }
+    
+    aside img{
+        width: 100px;
+    }
+
+    aside li{
+        /* width: 200px */
+        text-align: center;
+    }
+}
